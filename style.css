@@ -1,0 +1,180 @@
+body {
+    background-color:#367588;
+    background-repeat:none;
+  
+}
+.content {
+    margin:20px 190px 20px 190px;
+    padding:15px;
+    background-color:#333;
+  	color:white;
+}
+.header {
+    color:white;
+    text-align:center;
+  	text-decoration:bold;
+    font-family:'Autour One';
+    font-size:30px;
+}
+/*--------------------NAVIGATION BAR----------------------*/
+.title-bar ul {
+    list-style-type: none;
+    margin: 20px 155px 20px 155px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.title-bar li {
+    float: left;
+}
+.title-bar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 20px 15px 20px;
+    text-decoration: none;
+}
+.title-bar a:hover {
+    background-color: #111;
+}
+.title-bar {
+    font-family:'Autour One';
+}
+.title-bar #float-right {
+    float:right;
+}
+.title-bar #active {
+    background-color:#ff9b05;
+}
+/*-----------------------SLIDESHOW-------------------------*/
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.Slides {display: none;}
+.slideshow img {vertical-align: middle;border: 3px solid white; max-height:500px;}
+.slideshow {
+ max-width: 1000px1ion: relative;
+ margin: auto;
+}
+.text {
+ color: red;
+ font-size: 15px;
+ padding: 30px 12px;
+ position: absolute;
+ bottom: 30px;
+ width: 100%;
+ text-align: center;
+}
+.numbertext {
+ color: #f2f2f2;
+ font-size: 12px;
+ padding: 8px 12px;
+ position: absolute;
+ top: 0;
+}
+.dot {
+ height: 15px;
+ width: 15px;
+ margin: 0 2px;
+ background-color: #bbb;
+ border-radius: 50%;
+ display: inline-block;
+ transition: background-color 0.6s ease;
+}
+.active {
+ background-color: #717171;
+}
+.fade {
+ -webkit-animation-name: fade;
+ -webkit-animation-duration: 1.5s;
+ animation-name: fade;
+ animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+ from {opacity: .4}
+ to {opacity: 1}
+}
+@keyframes fade {
+ from {opacity: .4}
+ to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+ .text {font-size: 11px}
+}
+/*------------------Diet----------------------*/
+.text_diet {
+    color:white;
+    text-align:center;
+    font-size:20px;
+}
+
+.text_diet a {
+    text-decoration:none;
+    color:white;
+}
+
+.text_diet a:hover {
+    text-decoration:underline;
+}
+
+.img_diet {
+    width:650px;
+    vertical-align:middle;
+}
+
+.table_diet {
+    vertical-align:middle;
+    margin:auto;
+}
+
+#fly {
+    color:yellow;
+}
+/*-----------------Medicine------------------*/
+
+.medicineimage {
+  padding:10px;
+  width:325px;
+  height:50%%;
+  border-color:blue;
+
+}
+
+.tabel_text {
+    text-align:center;
+}
+
+.marquee_medicine {
+    background-color:#367588;
+/*------------------LES SECRET----------------------*/
+.normal-picture {
+  width:50px;
+  height:50px;
+  float:right;
+}
+/*------------------Marijuana-----------------------*/
+.biggiecheese{
+    font-size:20px
+}
+
+/*------------------Addiction-----------------------*/
+#introduction_masoud {
+     text-align:center;
+     
+}
+#header{
+    text-align: center;
+}
+
+#listone{
+    margin:50px;
+}
+
+
+
+
+
+
+
+
+
+

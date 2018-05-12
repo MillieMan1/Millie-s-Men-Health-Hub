@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Health Hub</title>
+       <link rel="stylesheet" type="text/css" href="style.css">
+       <link href='https://fonts.googleapis.com/css?family=Autour One' rel='stylesheet'>
+    </head>
+    
+    <body>
+      	<div class="title-bar">
+           <ul>
+                <li id="active"><a href="index.html">Home</a></li>
+                <li><a href="diet.html">Diet</a></li>
+                <li id="float-right"><a href="about.html">About</a></li>
+                <li><a href="medicine.html">Medicine</a></li>
+             		<li><a href="marijuana.html">Marijuana</a></li>
+             		<li><a href="Drug_addiction.html">Addiction</a></li>
+             		<li><a href="fitness.html">Fitness</a></li>
+           </ul>
+				</div>
+       
+       <div class="content">
+         		<p class="header">Health Hub<a href="secret.html">    </a></p>
+            <div class="slideshow">
+               <div class="Slides fade">
+                   <img src="https://i.pinimg.com/originals/c3/25/4f/c3254fb3cba70bd0784bc993746e28df.jpg" style="width:100%">
+               </div>
+               <div class="Slides fade">
+                   <img src="http://dailychiefers.com/wp-content/media/2017/03/2-2.jpg" style="width:100%" alt="drugs">
+               </div>
+               <div class="Slides fade"> 
+                   <img src="http://happyhealthynat.com/wp-content/uploads/2014/03/happy-people-exercising.jpg" style="width:100%">
+               </div>
+               <div class="Slides fade">
+                   <img src="https://www.visionsconnected.nl/wp-content/uploads/2016/04/iStock_000013005710Large.jpg" style="width:100%">
+               </div>
+               <div class="Slides fade">
+                   <img src="http://cdn-wpmsa.defymedia.com/wp-content/uploads/sites/3/2013/03/shutterstock_72197374.jpg" style="width:100%">
+               </div>
+               <div class="Slides fade">
+                   <img src="http://image.shutterstock.com/z/stock-photo-health-word-cloud-concept-274832978.jpg" style="width:100%">
+               </div>
+               <br>
+               <div style="text-align:center">
+                   <span class="dot"></span>
+                   <span class="dot"></span>
+                   <span class="dot"></span>
+                   <span class="dot"></span>
+                   <span class="dot"></span>
+                   <span class="dot"></span>
+               </div>
+
+               <script>
+               var slideIndex = 0;
+               showSlides();
+               function showSlides() {
+                   var i;
+                   var slides = document.getElementsByClassName("Slides");
+                   var dots = document.getElementsByClassName("dot");
+                   for (i = 0; i < slides.length; i++) {
+                   slides[i].style.display = "none"; 
+                   }
+                   slideIndex++;
+                   if (slideIndex > slides.length) {slideIndex = 1}    
+                   for (i = 0; i < dots.length; i++) {
+                   dots[i].className = dots[i].className.replace(" active", "");
+                   }
+                   slides[slideIndex-1].style.display = "block"; 
+                   dots[slideIndex-1].className += " active";
+                   setTimeout(showSlides, 3000);
+               }
+               </script>
+           </div>
+           
+           
+       </div>
+    </body>
+    
+</html>
+

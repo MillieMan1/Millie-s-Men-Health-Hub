@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Diet</title>
+       <link rel="stylesheet" type="text/css" href="style.css">
+       <link href='https://fonts.googleapis.com/css?family=Autour One' rel='stylesheet'>
+    </head>
+    
+    <body>
+        <div class="title-bar">
+           <ul>
+                <li><a href="index.html">Home</a></li>
+                <li id="active"><a href="diet.html">Diet</a></li>
+                <li><a href="medicine.html">Medicine</a></li>
+             		<li><a href="marijuana.html">Marijuana</a></li>
+            		<li><a href="Drug_addiction.html">Addiction</a></li>
+                <li><a href ="fitness.html">Fitness</a></li>
+             		<li id="float-right"><a href="about.html">About</a></li>
+           </ul>
+       </div>
+       
+       <div class="content">
+           <p class="header">A Healthy Diet</p>
+           <p class="text_diet">
+               The key to a healthy diet is to follow the food pyramid that has been
+               created by the USDA (<a href="https://www.cnpp.usda.gov/" target="blank">United States Department of Agriculture</a>). 
+               It contains all the key aspects of a healthy meal!
+           </p>
+           <table class="table_diet">
+               <td>
+                    <img class="img_diet" src="http://www.conceptdraw.com/How-To-Guide/picture/Food-and-Beverage-Health-Food-USDA-Food-Pyramid.png">
+               </td>
+           </table>
+           <h3>How Can Healthy Eating Improve your Mood?</h3>
+           <p>
+                We all know that eating right can help you maintain a healthy weight 
+                and avoid certain health problems, but your diet can also have a 
+                profound effect on your mood and sense of wellbeing. Studies have 
+                linked eating a typical Western diet—filled with processed meats, 
+                packaged meals, takeout food, and sugary snacks—with higher rates 
+                of depression, stress, bipolar disorder, and anxiety. Eating an 
+                unhealthy diet may even play a role in the development of mental 
+                health disorders such as ADHD, Alzheimer’s disease, and schizophrenia, 
+                or in the increased risk of suicide in young people.
+                Eating more fresh fruits and vegetables, cooking meals at home, 
+                and reducing your intake of sugar and refined carbohydrates, on the 
+                other hand, may help to improve mood and lower your risk for mental 
+                health issues. If you have already been diagnosed with a mental health 
+                problem, eating well can even help to manage your symptoms and regain 
+                control of your life.
+           </p>
+           <h2 id="fly">Remember to Eat Healthy!!!</h2>
+
+<script type="text/javascript">
+    message = document.getElementById("fly").innerHTML; // $ = taking a new line
+    distance = 50; // pixel(s)
+    speed = 200; // milliseconds
+
+    var txt="",
+    	num=0,
+	    num4=0,
+	    flyofle="",
+	    flyofwi="",
+	    flyofto="",
+	    fly=document.getElementById("fly");
+
+
+    function stfly() {
+	    for(i=0;i != message.length;i++) {
+		    if(message.charAt(i) != "$")
+			    txt += "<span style='position:relative;visibility:hidden;' id='n"+i+"'>"+message.charAt(i)+"<\/span>";
+		    else
+			    txt += "<br>";
+	    }
+	    fly.innerHTML = txt;
+	    txt = "";
+	    flyofle = fly.offsetLeft;
+	    flyofwi = fly.offsetWidth;
+	    flyofto = fly.offsetTop;
+    	fly2b();
+    }
+
+    function fly2b() {
+	    if(num4 != message.length) {
+		    if(message.charAt(num4) != "$") {
+			    var then = document.getElementById("n" + num4);
+			    then.style.left = flyofle - then.offsetLeft + flyofwi / 2 + 'px';
+			    then.style.top = flyofto - then.offsetTop + distance + 'px';
+			    fly3(then.id, parseInt(then.style.left), parseInt(then.style.left) / 5, parseInt(then.style.top), parseInt(then.style.top) / 5);
+		    }
+		    num4++;
+		    setTimeout("fly2b()", speed);
+	    }
+    }
+
+    function fly3(target,lef2,num2,top2,num3) {
+	    if((Math.floor(top2) != 0 && Math.floor(top2) != -1) || (Math.floor(lef2) != 0 && Math.floor(lef2) != -1)) {
+		    if(lef2 >= 0)
+			    lef2 -= num2;
+		    else
+		        lef2 += num2 * -1;
+		    if(Math.floor(lef2) != -1) {
+			    document.getElementById(target).style.visibility = "visible";
+			    document.getElementById(target).style.left = Math.floor(lef2) + 'px';
+		    } else {
+			    document.getElementById(target).style.visibility = "visible";
+			    document.getElementById(target).style.left = Math.floor(lef2 + 1) + 'px';
+		    }
+		    if(lef2 >= 0)
+			    top2 -= num3
+	    	else
+			    top2 += num3 * -1;
+		    if(Math.floor(top2) != -1)
+		    	document.getElementById(target).style.top = Math.floor(top2) + 'px';
+		    else
+			    document.getElementById(target).style.top = Math.floor(top2 + 1) + 'px';
+	    	setTimeout("fly3('"+target+"',"+lef2+","+num2+","+top2+","+num3+")",50)
+	    }
+    }
+
+stfly()
+
+</script>
+       </div>
+       
+       
+    </body>
+    
+    
+</html>
